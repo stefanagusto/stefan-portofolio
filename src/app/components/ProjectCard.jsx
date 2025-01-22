@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
@@ -12,10 +11,10 @@ export default function ProjectCard({
   github,
 }) {
   return (
-    <div className="border border-slate-200 rounded-xl flex flex-col h-full">
+    <div className="flex flex-col h-full border border-slate-200 rounded-xl">
       {/* Image Section */}
       <div
-        className="group rounded-t-xl h-52 md:h-72 bg-center relative overflow-hidden"
+        className="relative overflow-hidden bg-center group rounded-t-xl h-52 md:h-72"
         style={{
           background: `url(${imgUrl})`,
           backgroundSize: "cover",
@@ -43,13 +42,13 @@ export default function ProjectCard({
       {/* Content Section */}
       <div className="bg-[#181818] rounded-b-xl py-6 px-4 text-white flex flex-col flex-1">
         {/* Title */}
-        <h5 className="font-lg font-semibold mb-2">{title}</h5>
+        <h5 className="mb-2 font-semibold font-lg">{title}</h5>
 
         {/* Description */}
         <p className="text-[#ADB7BE] mb-4 flex-1">{description}</p>
 
         {/* Tech Stack */}
-        <div className="mt-auto flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 mt-auto">
           {techStack.map((tech, index) => (
             <span
               key={index}

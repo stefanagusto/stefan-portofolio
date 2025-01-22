@@ -1,8 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import TypingAnimation from "./TypeAnimation";
-import { FaLinkedin, FaGithub, FaInstagram, FaMailBulk } from "react-icons/fa"; // Import icons
+import { FaLinkedin, FaGithub} from "react-icons/fa"; // Import icons
 import { IoMdMail } from "react-icons/io";
 
 export default function HeroSection() {
