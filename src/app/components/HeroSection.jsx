@@ -12,17 +12,18 @@ export default function HeroSection() {
           <div className="px-[2px] py-[2px] rounded-full bg-[#ffffff] w-[180px] h-[180px] lg:w-[200px] lg:h-[200px] relative ">
             <span className="block bg-[#121212]  rounded-full w-[176px] h-[176px] lg:w-[196px] lg:h-[196px] relative ease-in-out duration-200">
               <Image
-                src="/images/hero-image.svg"
+                src="/images/Stefan.jpg"
                 alt="heroimage"
-                width={140}
-                height={140}
-                className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                fill
+                className="absolute object-cover w-full h-full translate-x-0 rounded-full" // adjust translate-x-4 as needed
+                style={{ objectPosition: 'center 80%' }}
+                priority
               />
             </span>
           </div>
         </div>
         <div className="col-span-7 text-center place-self-center sm:text-center">
-          <h1 className="mb-4 text-2xl font-extrabold text-white sm:text-5xl lg:text-5xl">
+          <h1 className="mb-4 text-2xl font-extrabold tsext-white sm:text-5xl lg:text-5xl">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-400 hover:bg-slate-200">
               Hello, I&apos;m Stefan Agusto{" "}
             </span>
