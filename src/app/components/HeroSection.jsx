@@ -23,7 +23,7 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="col-span-7 text-center place-self-center sm:text-center">
-          <h1 className="mb-4 text-2xl font-extrabold tsext-white sm:text-5xl lg:text-5xl">
+          <h1 className="mb-4 text-2xl font-extrabold text-white sm:text-5xl lg:text-5xl">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-400 hover:bg-slate-200">
               Hello, I&apos;m Stefan Agusto{" "}
             </span>
